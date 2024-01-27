@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Formulaire </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+
+    <form action="">
+        <fieldset>
+            
+            <legend> Informations Personnelles </legend>
+            
+            <label for="prenom">Prenom :</label>
+            <input type="text" id="prenom" name="prenom" required>
+
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+
+            <label for="pseudo">Pseudo :</label>
+            <input type="text" id="pseudo" name="pseudo" required>
+
+            <label for="email">E-mail :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="motdepasse">Mot de passe :</label>
+            <input type="password" id="motdepasse" name="motdepasse" required>
+            <p id="motdepasseError" class="error"></p>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend> Informations Complementaire </legend>
+
+            
+            <label for="commentaire">Commentaire :</label>
+            <textarea name="commentaire" id="commentaire" cols="50" rows="6"></textarea>
+
+            <label for="abonnement">Suivre la newsletter</label>
+            <input type="checkbox" name="abonnement" id="abonnement" value="s'abonner">
+
+           
+            <p>Genre :</p>
+            <label for="homme">Homme</label>
+            <input type="radio" id="homme" name="genre" value="homme">
+            <label for="femme">Femme</label>
+            <input type="radio" id="femme" name="genre" value="femme">
+            <label for="helicoptere">Helicoptere de combat</label>
+            <input type="radio" id="helicoptere" name="genre" value="helicoptere">
+            <p id="genreError" class="error"></p>
+            
+            
+            <label for="provenance">Provenance :</label>
+            <select name="provenance" id="provenance">
+                <option value="kentucky">Kentucky</option>
+                <option value="corse">Corse</option>
+                <option value="sicile">Sicile</option>
+                <option value="sognefjord">Sognefjord</option>
+                <option value="ushuaia">Ushuaia</option>
+            </select>
+        </fieldset>
+
+        <input type="button" id="bt" value="Valider">
+        <button onclick="myFunction()">Cliquer pour changer le theme de la page</button>
+    </form>
+    
+<script src="script.js"></script>
+</body>
+</html>

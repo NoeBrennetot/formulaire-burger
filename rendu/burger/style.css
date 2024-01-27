@@ -1,0 +1,83 @@
+body{
+    padding: 25px;
+    background-color: white;
+    color: black;
+    font-size: 25px;
+}
+
+.dark-mode{
+    background-color: black;
+    color: white;
+}
+
+button{
+    cursor: pointer;
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: grey;
+    color: white;
+}
+
+
+.burger-menu {
+    cursor: pointer;
+    display: none; 
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color:white;
+    margin: 6px 0;
+    transition: 0.4s; 
+}
+
+
+.nav-menu {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    margin-right: 20px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .burger-menu {
+        display: block; 
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: gray;
+        width: 100%;
+    }
+
+    .nav-menu.show {
+        display: flex;
+    }
+}
